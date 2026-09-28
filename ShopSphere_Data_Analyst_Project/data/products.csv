@@ -1,0 +1,101 @@
+product_id,product_name,category,sub_category,brand,cost_price,selling_price
+P001,Business Strategy 1,Books,Fiction,TechPro,6720.48,8551.45
+P002,Self Help Book 2,Books,Fiction,Casa,6712.69,9550.03
+P003,Wireless Earbuds 3,Electronics,Mobiles,Nova,2108.39,2957.39
+P004,Resistance Bands 4,Sports,Outdoor,Aster,5911.98,8409.62
+P005,Face Serum 5,Beauty,Makeup,Casa,6872.68,8452.23
+P006,Storage Box 6,Home & Kitchen,Storage,UrbanLeaf,2079.07,3184.61
+P007,Wireless Earbuds 7,Electronics,Smart Home,Zenith,3346.2,4423.6
+P008,Smart Watch 8,Electronics,Smart Home,UrbanLeaf,1280.97,2063.83
+P009,Resistance Bands 9,Sports,Sportswear,Aster,5635.34,8908.65
+P010,Business Strategy 10,Books,Fiction,UrbanLeaf,6012.34,9238.17
+P011,Casual Shirt 11,Fashion,Women,CoreFit,2631.73,3862.96
+P012,Denim Jacket 12,Fashion,Footwear,UrbanLeaf,2027.85,2602.72
+P013,Sports T-Shirt 13,Sports,Outdoor,Casa,6610.9,8142.65
+P014,Cookware Set 14,Home & Kitchen,Home Decor,Nova,3040.17,4664.1
+P015,Denim Jacket 15,Fashion,Women,CoreFit,3718.27,4399.06
+P016,Casual Shirt 16,Fashion,Accessories,TechPro,7982.91,11746.26
+P017,Storage Box 17,Home & Kitchen,Home Decor,Casa,6750.8,9582.68
+P018,Cricket Kit 18,Sports,Equipment,Vivid,2114.41,3486.17
+P019,Wireless Earbuds 19,Electronics,Mobiles,Casa,1528.06,1879.5
+P020,Treadmill 20,Sports,Fitness,Zenith,3545.88,5843.83
+P021,Resistance Bands 21,Sports,Fitness,Zenith,6536.77,9745.38
+P022,Business Strategy 22,Books,Academic,Nova,2768.67,3402.91
+P023,Exam Guide 23,Books,Academic,UrbanLeaf,6900.51,9687.22
+P024,Self Help Book 24,Books,Academic,CoreFit,4657.59,5819.45
+P025,Handbag 25,Fashion,Women,CoreFit,3039.06,3524.51
+P026,Air Fryer 26,Home & Kitchen,Home Decor,UrbanLeaf,2304.49,3303.9
+P027,Wireless Earbuds 27,Electronics,Smart Home,TechPro,8805.82,12472.15
+P028,Handbag 28,Fashion,Accessories,Casa,1636.42,2313.63
+P029,Sneakers 29,Fashion,Men,CoreFit,2929.34,4826.31
+P030,Face Serum 30,Beauty,Personal Care,Nova,2366.53,2797.27
+P031,Sports T-Shirt 31,Sports,Outdoor,Nova,2122.32,2516.0
+P032,Cotton Kurta 32,Fashion,Women,Aster,7761.98,9201.27
+P033,Storage Box 33,Home & Kitchen,Appliances,Vivid,4936.04,7461.69
+P034,Casual Shirt 34,Fashion,Accessories,Casa,1859.42,2228.45
+P035,Mixer Grinder 35,Home & Kitchen,Appliances,UrbanLeaf,4299.16,6511.24
+P036,USB Hub 36,Electronics,Smart Home,Aster,3172.65,5015.44
+P037,Handbag 37,Fashion,Men,Zenith,4136.77,5629.9
+P038,Face Serum 38,Beauty,Haircare,UrbanLeaf,4088.41,6462.45
+P039,Wireless Earbuds 39,Electronics,Mobiles,TechPro,8350.56,13146.69
+P040,Moisturizer 40,Beauty,Personal Care,Nova,2065.25,2789.16
+P041,Cotton Kurta 41,Fashion,Accessories,Vivid,8870.42,11377.21
+P042,Cookware Set 42,Home & Kitchen,Appliances,Vivid,8623.54,14209.1
+P043,Denim Jacket 43,Fashion,Men,Nova,2100.12,2476.55
+P044,Business Strategy 44,Books,Academic,TechPro,622.26,863.94
+P045,Smartphone 45,Electronics,Mobiles,Aster,784.36,928.67
+P046,Hair Dryer 46,Beauty,Skincare,UrbanLeaf,2351.62,3403.4
+P047,Lipstick 47,Beauty,Makeup,Aster,1981.57,2988.4
+P048,Storage Box 48,Home & Kitchen,Appliances,CoreFit,6104.31,7935.59
+P049,Power Bank 49,Electronics,Mobiles,UrbanLeaf,5658.62,8100.3
+P050,Smart Watch 50,Electronics,Accessories,UrbanLeaf,2519.07,4072.4
+P051,Denim Jacket 51,Fashion,Footwear,Zenith,1571.33,2462.07
+P052,Resistance Bands 52,Sports,Fitness,UrbanLeaf,7386.86,9600.62
+P053,Cotton Kurta 53,Fashion,Footwear,TechPro,8027.27,12211.15
+P054,Table Lamp 54,Home & Kitchen,Storage,Zenith,2037.75,2692.76
+P055,Cricket Kit 55,Sports,Equipment,UrbanLeaf,8165.07,12844.08
+P056,Novel Collection 56,Books,Self-Help,TechPro,568.85,749.05
+P057,Python Programming 57,Books,Academic,Casa,6717.66,9578.31
+P058,Yoga Mat 58,Sports,Fitness,TechPro,843.65,1342.71
+P059,Cricket Kit 59,Sports,Fitness,TechPro,5317.73,6509.15
+P060,Bluetooth Speaker 60,Electronics,Audio,Nova,8109.02,12553.26
+P061,Cookware Set 61,Home & Kitchen,Home Decor,Casa,2380.85,2860.35
+P062,Dumbbell Set 62,Sports,Outdoor,TechPro,7805.82,12786.74
+P063,Shampoo 63,Beauty,Skincare,Casa,6676.5,8786.89
+P064,Novel Collection 64,Books,Non-Fiction,Casa,1584.12,2377.19
+P065,Smartphone 65,Electronics,Smart Home,CoreFit,1940.23,3122.27
+P066,Storage Box 66,Home & Kitchen,Home Decor,CoreFit,388.72,484.56
+P067,Bedsheet Set 67,Home & Kitchen,Kitchen,CoreFit,3277.11,4603.37
+P068,Bluetooth Speaker 68,Electronics,Mobiles,Zenith,1754.97,2862.82
+P069,Smart Watch 69,Electronics,Mobiles,CoreFit,4012.85,6076.55
+P070,Moisturizer 70,Beauty,Skincare,Nova,8113.63,10101.79
+P071,Business Strategy 71,Books,Self-Help,Aster,4765.7,7402.35
+P072,Air Fryer 72,Home & Kitchen,Appliances,CoreFit,8549.07,13767.3
+P073,Self Help Book 73,Books,Fiction,Casa,8118.41,11394.69
+P074,Cookware Set 74,Home & Kitchen,Appliances,Casa,2787.68,3383.25
+P075,Self Help Book 75,Books,Self-Help,Zenith,6778.55,8385.16
+P076,Lipstick 76,Beauty,Skincare,CoreFit,2710.58,3699.79
+P077,Moisturizer 77,Beauty,Personal Care,TechPro,6139.03,8628.94
+P078,Novel Collection 78,Books,Fiction,CoreFit,4726.29,6930.96
+P079,USB Hub 79,Electronics,Accessories,TechPro,2917.9,4532.32
+P080,Smartphone 80,Electronics,Mobiles,UrbanLeaf,8858.32,12894.5
+P081,Face Wash 81,Beauty,Personal Care,Casa,5257.42,7934.36
+P082,Shampoo 82,Beauty,Personal Care,UrbanLeaf,1481.58,2213.2
+P083,Shampoo 83,Beauty,Haircare,Vivid,7272.25,10893.51
+P084,Wireless Earbuds 84,Electronics,Accessories,CoreFit,4205.99,6522.26
+P085,Hair Dryer 85,Beauty,Personal Care,Vivid,4112.96,5057.21
+P086,Shampoo 86,Beauty,Makeup,Vivid,7587.59,9777.79
+P087,Novel Collection 87,Books,Non-Fiction,Aster,4059.68,6117.01
+P088,Bedsheet Set 88,Home & Kitchen,Storage,TechPro,8056.5,9589.56
+P089,Sneakers 89,Fashion,Accessories,Casa,1527.74,1920.33
+P090,Hair Dryer 90,Beauty,Makeup,Casa,4289.45,5066.41
+P091,Hair Dryer 91,Beauty,Skincare,CoreFit,3534.96,4075.63
+P092,Mixer Grinder 92,Home & Kitchen,Appliances,Aster,4927.11,7475.99
+P093,Lipstick 93,Beauty,Haircare,CoreFit,4024.07,4686.08
+P094,Self Help Book 94,Books,Self-Help,TechPro,1635.69,2263.3
+P095,Treadmill 95,Sports,Fitness,UrbanLeaf,5400.49,8000.83
+P096,Python Programming 96,Books,Self-Help,Zenith,7825.63,9710.55
+P097,Shampoo 97,Beauty,Makeup,Casa,4190.45,5526.16
+P098,Bedsheet Set 98,Home & Kitchen,Appliances,Nova,7543.91,10449.47
+P099,Cookware Set 99,Home & Kitchen,Home Decor,Nova,785.21,1278.83
+P100,Smartphone 100,Electronics,Accessories,Aster,7582.0,11074.78

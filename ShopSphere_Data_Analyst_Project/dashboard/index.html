@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShopSphere Analytics</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f7fb;color:#18212f}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:230px;background:#111827;color:white;padding:28px 18px}
+.logo{font-size:22px;font-weight:800;margin-bottom:35px}.nav{padding:12px 14px;border-radius:10px;margin:6px 0;background:transparent;color:#cbd5e1}.nav.active{background:#263244;color:white}
+.main{margin-left:230px;padding:30px}.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+h1{margin:0;font-size:28px}.sub{color:#64748b;margin-top:6px}.filters{display:flex;gap:12px}.filter{background:white;border:1px solid #e2e8f0;border-radius:9px;padding:10px 14px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}.card{background:white;border:1px solid #e5e7eb;border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(15,23,42,.04)}
+.label{color:#64748b;font-size:13px}.value{font-size:25px;font-weight:800;margin-top:8px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.chart{height:330px}.wide{grid-column:1/-1}
+.insights{margin-top:20px}.insights li{margin:10px 0;color:#334155}
+@media(max-width:900px){.sidebar{position:static;width:auto}.main{margin-left:0}.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<aside class="sidebar"><div class="logo">ShopSphere</div>
+<div class="nav active">Executive Dashboard</div><div class="nav">Customer Analytics</div><div class="nav">Product Analytics</div><div class="nav">Revenue Leakage</div>
+</aside>
+<main class="main">
+<div class="header"><div><h1>Customer Retention & Revenue Analytics</h1><div class="sub">Executive business intelligence dashboard</div></div>
+<div class="filters"><div class="filter">Date: All</div><div class="filter">Region: All</div></div></div>
+<section class="kpis" id="kpis"></section>
+<section class="grid">
+<div class="card wide"><h3>Monthly Revenue</h3><div class="chart"><canvas id="monthly"></canvas></div></div>
+<div class="card"><h3>Revenue by Category</h3><div class="chart"><canvas id="category"></canvas></div></div>
+<div class="card"><h3>Revenue by Region</h3><div class="chart"><canvas id="region"></canvas></div></div>
+<div class="card"><h3>Top 10 Products</h3><div class="chart"><canvas id="products"></canvas></div></div>
+<div class="card"><h3>Return Rate by Category</h3><div class="chart"><canvas id="returns"></canvas></div></div>
+<div class="card"><h3>Cancellation Rate by Region</h3><div class="chart"><canvas id="cancels"></canvas></div></div>
+</section>
+<section class="card insights"><h3>Generated Business Insights</h3><ul id="insights"></ul></section>
+</main>
+<script>
+fetch('data.json').then(r=>r.json()).then(d=>{
+const money=x=>'₹'+Number(x).toLocaleString('en-IN',{maximumFractionDigits:0});
+const k=[
+['Total Revenue',money(d.kpis.revenue)],['Total Orders',d.kpis.orders.toLocaleString()],
+['Customers',d.kpis.customers.toLocaleString()],['Average Order Value',money(d.kpis.aov)],
+['Repeat Purchase Rate',d.kpis.repeat_rate+'%'],['Return Rate',d.kpis.return_rate+'%'],
+['Cancellation Rate',d.kpis.cancel_rate+'%'],['Estimated Profit',money(d.kpis.estimated_profit)]
+];
+document.getElementById('kpis').innerHTML=k.map(x=>`<div class="card"><div class="label">${x[0]}</div><div class="value">${x[1]}</div></div>`).join('');
+function bar(id,labels,values,horizontal=false){new Chart(document.getElementById(id),{type:horizontal?'bar':'bar',data:{labels,datasets:[{label:'Value',data:values}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:horizontal?'y':'x',plugins:{legend:{display:false}}}})}
+new Chart(document.getElementById('monthly'),{type:'line',data:{labels:d.monthly.labels,datasets:[{label:'Revenue',data:d.monthly.values,tension:.3,fill:false}]},options:{responsive:true,maintainAspectRatio:false}});
+bar('category',d.category.labels,d.category.values);
+bar('region',d.region.labels,d.region.values);
+bar('products',d.top_products.labels,d.top_products.values,true);
+bar('returns',d.return_category.labels,d.return_category.values);
+bar('cancels',d.cancel_region.labels,d.cancel_region.values);
+const insights=[
+`<b>${d.category.labels[0]}</b> is the highest-revenue category.`,
+`Repeat purchase rate is <b>${d.kpis.repeat_rate}%</b>.`,
+`Overall return rate is <b>${d.kpis.return_rate}%</b>; review the highest-return categories.`,
+`Overall cancellation rate is <b>${d.kpis.cancel_rate}%</b>; investigate the highest-cancellation region.`,
+`Average order value is <b>${money(d.kpis.aov)}</b>.`,
+`Estimated product-level contribution after cost is <b>${money(d.kpis.estimated_profit)}</b>.`
+];
+document.getElementById('insights').innerHTML=insights.map(x=>`<li>${x}</li>`).join('');
+});
+</script></body></html>
